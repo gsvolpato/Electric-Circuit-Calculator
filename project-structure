@@ -1,0 +1,10 @@
+electric-circuit-calculator/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── circuit-builder.js
+│   ├── calculations.js
+│   └── visualization.js
+└── assets/
+    └── components/ 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Circuit Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>>>ELECTRIC CIRCUIT CALCULATOR</h1>
+    </header>
+    
+    <main>
+        <div class="left-panel">
+            <div id="circuit-display">
+                <canvas id="circuit-canvas"></canvas>
+            </div>
+            <div id="terminal">
+                <div class="terminal-line">
+                    <span class="terminal-prompt">>></span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-prompt">>></span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-prompt">>></span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="calculations-panel">
+            <h2>Node 1:</h2>
+            <div class="math-equation">5A = I<sub>R1</sub> + I<sub>R2</sub></div>
+            <div class="math-equation">V<sub>1</sub> - V<sub>2</sub> = I<sub>R1</sub> · 2Ω</div>
+            <div class="math-equation">V<sub>1</sub> - V<sub>2</sub> = I<sub>R2</sub> · 4Ω</div>
+            <div class="math-equation">I<sub>R1</sub> = (V<sub>1</sub> - V<sub>2</sub>)/2</div>
+            <div class="math-equation">I<sub>R2</sub> = (V<sub>1</sub> - V<sub>2</sub>)/4</div>
+            <div class="math-equation">5 = (V<sub>1</sub> - V<sub>2</sub>)/2 + (V<sub>1</sub> - V<sub>2</sub>)/4</div>
+            <div class="math-equation">5 = [2(V<sub>1</sub> - V<sub>2</sub>) + (V<sub>1</sub> - V<sub>2</sub>)]/4</div>
+            <div class="math-equation">5 = 3(V<sub>1</sub> - V<sub>2</sub>)/4</div>
+            <div class="math-equation">V<sub>1</sub> - V<sub>2</sub> = 5 · 4/3</div>
+            <div class="math-equation">V<sub>1</sub> - V<sub>2</sub> = 20/3</div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+    <script src="js/circuit-builder.js"></script>
+    <script src="js/calculations.js"></script>
+    <script src="js/visualization.js"></script>
+</body>
+</html> 

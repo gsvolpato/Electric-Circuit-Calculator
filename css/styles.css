@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e6e600;
+    --border-color: #333;
+    --terminal-bg: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--terminal-bg);
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 100px);
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--terminal-bg);
+}
+
+#circuit-display {
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+#terminal {
+    height: 150px;
+    background-color: var(--terminal-bg);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.terminal-line {
+    margin: 5px 0;
+}
+
+.terminal-prompt {
+    color: var(--text-color);
+}
+
+#calculations-panel {
+    background-color: var(--terminal-bg);
+    padding: 20px;
+    border-left: 1px solid var(--border-color);
+    font-size: 1.1em;
+}
+
+.math-equation {
+    margin: 10px 0;
+    line-height: 1.5;
+} 
