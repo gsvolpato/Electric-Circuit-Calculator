@@ -1,0 +1,91 @@
+html, body {
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    border: 2px solid #FFFF00 !important;  /* Thicker yellow border */
+    background-color: #000000 !important;
+}
+
+.circuit-area, .equation-area {
+    padding: 20px;
+    border: 2px solid #FFFF00 !important;  /* Thicker yellow border */
+    background-color: #000000 !important;
+}
+
+* {
+    background-color: #000000 !important;
+}
+
+body {
+    color: #FFFF00;  /* Keep the yellow text */
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#circuit-display {
+    flex: 1;
+    min-height: 0;  /* Allow flex to shrink */
+}
+
+.terminal-section {
+    height: 200px;  /* Fixed height for terminal section */
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #333;
+}
+
+.terminal-history {
+    flex: 1;
+    background-color: #000000;
+    overflow-y: auto;
+    padding: 8px;
+}
+
+.terminal-input-box {
+    height: 30px;  /* Fixed height for input box */
+    background-color: #000000;
+    border-top: 1px solid #333;
+}
+
+#terminal-input {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border: none;
+    color: #FFFF00;
+    font-family: 'Consolas', 'Courier New', monospace;
+    padding: 5px 8px;
+    outline: none;
+}
+
+.terminal-line {
+    color: #FFFF00;
+    font-family: 'Consolas', 'Courier New', monospace;
+    line-height: 1.4;
+}
+
+.terminal-error {
+    color: #FF6B68;
+}
+
+#terminal-input::placeholder {
+    color: #666;
+}
+
+/* Style for the message that appears at the bottom */
+.terminal-status {
+    color: #808080;
+    font-style: italic;
+} 
